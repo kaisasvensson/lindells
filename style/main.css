@@ -1,0 +1,380 @@
+@font-face{
+    font-family: 'Arapey';
+    src:url(Arapey-Regular.ttf);
+}
+
+html { 
+  background: url(../foton/bakgrund.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+@media screen and (max-width: 750px){
+  html {
+    background-image: none;
+  }
+} 
+ 
+   body {
+     font-family: 'Arapey', serif;
+     color: #716666
+   }
+
+  
+.contentwrapper {
+    background-color: white;
+    width: 78%;
+    height: auto;
+    margin:auto;
+    border: 2px solid #716666;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 750px){
+    .contentwrapper {
+        border: none;
+        width: 100%;
+  }
+} 
+
+
+   /*--------------------------------------------------
+                      header,meny                      
+    -------------------------------------------------*/
+
+.menu {
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   /* border-bottom: 1px solid #716666;*/
+    font-family: 'Yellowtail', cursive;
+}
+
+@media screen and (max-width: 750px){
+ .menu {
+     display:block;
+     border: none;
+    }
+}
+
+.logga{
+margin: 1% 2% 0 0;  
+
+}
+
+@media screen and (max-width: 750px){
+    .logga{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.menu ul {
+    padding-left: 0;
+}
+
+
+
+ .menu li {
+    float: left;
+    list-style: none; 
+    text-align: center; 
+}
+
+@media screen and (max-width: 750px){
+ul li {
+    text-align: center; 
+    border: 1px solid #716666;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    line-height: 2.5em;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+    margin: 5px 0 5px 0;   
+    display: block;
+
+  }
+} 
+
+a {
+    color: #716666;
+    margin: 0 30px 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: italic;
+    display: block;
+    justify-content: center;
+}
+
+
+a:hover {
+    color: #bf9b30;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    a{
+        margin: 0 20px 0 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    a{
+        margin: 0 15px 0 15px;
+        font-size: 19px;
+    }
+}
+
+ /*------------------------------------------------------
+                      HEM SIDA 1               
+------------------------------------------------------ */     
+
+article {
+    text-align: center;
+    font-size: 19px;
+    margin-top: 4%;
+    width: 100%
+}
+
+@media screen and (max-width: 750px) {
+    article{
+        margin-top: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    article p{
+        font-size: 18px;
+    }
+}
+
+.galleri {
+    display: flex;
+    justify-content: center;
+}
+
+.galleri img {
+    /*border: 2px solid #716666;*/
+ /*   border-radius: 4px;*/
+    max-width: 27%;
+    height: 350px;
+   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px){
+ .galleri img {
+     width: 100%;
+     height: 0 auto;
+     margin: 0;
+  }
+} 
+
+@media screen and (max-width: 750px){
+ .hide {
+     display: none;
+  }
+} 
+
+
+
+/*-------------------------------------------------------
+                    OM -  SIDA 2
+---------------------------- ---------------------------*/
+
+section {
+    width: 60%;
+    height: auto;
+    margin: 5% 0 5% 20%;
+    color: #716666;
+}
+
+@media screen and (max-width: 750px){
+    section {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.historia img {
+       
+    border: 2px solid #716666;
+    border-radius: 4px;
+    margin-right: 1%;
+    width: 45%;
+    height: 35%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 750px){
+    .historia img {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 5%;
+        justify-content: center;
+    }
+}
+
+/*-------------------------------------------------------------
+                      BOKA  - SIDA 3                
+-------------------------------------------------------------- */
+.booking {
+     text-align: center;
+     color: #716666;
+     margin: 4% 0 4% 0;
+}
+
+#personal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    padding: 0 8% 5% 8%;
+}
+
+#personal img {
+    border: 2px solid #61464b;
+    border-radius: 4px;
+    margin: 1%;
+    width: 20%;
+    height: 25%;
+}
+@media screen and (max-width: 750px){
+    #personal img {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0;
+        justify-content: center;
+    }
+}
+
+
+
+/*--------------------------------------------------------------
+                      PRISLISTA  - SIDA 4                                
+-------------------------------------------------------------- */
+
+.tabell {
+    font-size: 24px;
+    margin: 5% 0 5% 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;  
+}
+
+@media screen and (max-width: 750px) {
+    .tabell {
+        width: 100%;
+    }
+}
+
+th, td {
+    padding: 1%;
+    border: 1px solid #e5e5db;
+} 
+
+th {
+    text-align: left;
+}
+
+.space {
+    word-spacing: 20px;
+}
+
+tr:hover {
+    background-color: #e5e5db;
+}
+
+/*----------------------------------------------------------
+                    aside KONTAKT SIDA 5         
+                                 
+-----------------------------------------------------------*/
+
+.kontakt {
+    width: 60%;
+    height: auto;
+    margin: 5% 0 0 20%;
+    color: #716666;
+    line-height: 1.5;
+}
+@media screen and (max-width: 750px) {
+    .kontakt {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.kontakt h2 {
+    border-bottom: 1px solid #e5e5db;
+    padding-bottom: 10px;
+}
+
+.kontakt a:hover {
+    color: #bf9b30;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e5db;
+}
+
+iframe {
+    filter:grayscale(50%);
+    border-radius: 6px;
+}
+@media screen and (max-width: 750px){
+    iframe {
+        width: 90%;
+        height: 40%;
+        margin: 5%;
+    }
+}
+
+
+#skicka{
+    background-color:white;
+     color: #716666;
+     font-family: 'Arapey';
+     font-size: 18px;
+     border: 1px solid #716666;
+}
+
+/*------------------------------------------------------------
+                            FOOTER                     
+-------------------------------------------------------------*/
+
+footer {
+    padding: 2% 0 2% 0;
+    background-color: white; 
+    width:100%;
+    height: auto;
+}
+
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+footer .produkter {
+    flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+    padding: 0 0 2% 0; 
+}
+
+footer .produkter img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 750px){
+    footer .produkter img {
+        margin: auto;
+    }
+}
